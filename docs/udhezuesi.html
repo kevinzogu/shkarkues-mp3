@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<title>Shkarkues MP3 – Udhëzuesi</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm; }
+  :root { --accent: #e94560; --ink: #1d1d2b; --muted: #6b6b80; --soft: #f5f3f8; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 11pt; line-height: 1.5; margin: 0; }
+  .cover { display: flex; align-items: center; gap: 18px; padding-bottom: 14px; border-bottom: 3px solid var(--accent); margin-bottom: 18px; }
+  .cover img { width: 72px; height: 72px; }
+  .cover h1 { margin: 0; font-size: 26pt; line-height: 1.1; }
+  .cover p { margin: 2px 0 0; color: var(--muted); }
+  h2 { font-size: 15pt; margin: 22px 0 8px; color: var(--accent); break-after: avoid; }
+  h3 { font-size: 12pt; margin: 14px 0 4px; break-after: avoid; }
+  .shot { width: 100%; border-radius: 8px; border: 1px solid #ddd; margin: 6px 0 4px; }
+  .caption { color: var(--muted); font-size: 9pt; text-align: center; margin-bottom: 8px; }
+  ol.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+  ol.steps > li { counter-increment: s; position: relative; padding: 8px 0 8px 46px; break-inside: avoid; }
+  ol.steps > li::before { content: counter(s); position: absolute; left: 0; top: 8px; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .box { background: var(--soft); border-left: 4px solid var(--accent); border-radius: 6px; padding: 10px 14px; margin: 10px 0; break-inside: avoid; }
+  .box b:first-child { display: block; margin-bottom: 2px; }
+  kbd, .btn { display: inline-block; padding: 0 7px; border-radius: 4px; background: #ececf3; border: 1px solid #cfcfdc; font-size: 10pt; }
+  .btn.red { background: var(--accent); color: #fff; border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10pt; break-inside: avoid; }
+  th, td { text-align: left; padding: 7px 9px; border-bottom: 1px solid #e3e3ea; vertical-align: top; }
+  th { background: var(--soft); }
+  .legend td:first-child { width: 120px; font-weight: 600; }
+  .ok { color: #1f9d63; } .bad { color: #d64545; } .mut { color: var(--muted); }
+  .page-break { break-before: page; }
+  footer { margin-top: 24px; color: var(--muted); font-size: 9pt; border-top: 1px solid #e3e3ea; padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img src="../assets/logo.png" alt="">
+  <div>
+    <h1>Shkarkues MP3</h1>
+    <p>Udhëzuesi i përdorimit · versioni 2.0</p>
+  </div>
+</div>
+
+<p>Ky program shkarkon këngë nga YouTube dhe i ruan në kompjuter si <b>MP3</b>, me kopertinë dhe emrin e artistit.
+Nuk ka nevojë për instalim: mjafton ta hapësh.</p>
+
+<h2>Hapja e parë</h2>
+<ol class="steps">
+  <li><b>Nxirr skedarët nga zip-i.</b> Kliko me të djathtën mbi zip-in → <i>Extract All…</i> (Nxirr të gjitha) → <i>Extract</i>.
+      Mos e hap programin direkt nga brenda zip-it.</li>
+  <li><b>Hap <kbd>ShkarkuesMP3.exe</kbd></b> me dy klikime. Hera e parë zgjat 5–10 sekonda. Kjo është normale.</li>
+  <li><b>Nëse del ekrani blu "Windows protected your PC"</b>, kliko <b>More info</b> dhe pastaj <b>Run anyway</b>.
+      Kjo ndodh sepse programi nuk është i nënshkruar dixhitalisht, jo sepse ka virus.</li>
+</ol>
+
+<div class="box"><b>Këshillë</b>Zhvendose <kbd>ShkarkuesMP3.exe</kbd> te Desktop-i ose te një dosje e jotja,
+që ta gjesh lehtë herën tjetër.</div>
+
+<h2>Si shkarkoj këngë</h2>
+<img class="shot" src="screenshot.png" alt="Pamje nga programi">
+<div class="caption">Dritarja e programit gjatë një shkarkimi</div>
+
+<ol class="steps">
+  <li><b>Çfarë do të shkarkosh?</b>
+    <br>• Te skeda <b>Kërko në YouTube</b>: shkruaj emrin e këngës, këngëtarit ose zhanrit
+    (p.sh. <i>kenge popullore dibrane</i>) dhe zgjidh <b>Sa këngë</b> do.
+    <br>• Ose te skeda <b>Link-e / Playlist</b>: ngjit një ose më shumë link-e YouTube, një për rresht.
+    Mund të ngjitësh edhe link playlist-e, dhe programi i shkarkon të gjitha këngët e saj.</li>
+  <li><b>Cilësimet</b> (mund t'i lësh siç janë):
+    <br>• <b>Cilësia e MP3</b>: 192 kbps është e mirë për shumicën. 320 kbps jep cilësinë më të lartë, por skedarë më të mëdhenj.
+    <br>• <b>Njëkohësisht</b>: sa këngë shkarkohen në të njëjtën kohë. 4 është optimale. Nëse interneti është i dobët, vendos 2.</li>
+  <li><b>Ruaj te</b>: dosja ku do të ruhen këngët. Si parazgjedhje është <kbd>Downloads\Muzika</kbd>.
+      Kliko <span class="btn">Zgjidh…</span> për ta ndryshuar.</li>
+  <li>Shtyp <span class="btn red">▶ Fillo shkarkimin</span>, ose thjesht <kbd>Enter</kbd> pasi ke shkruar kërkimin.</li>
+  <li>Kur të përfundojë, programi pyet nëse do ta hapësh dosjen me këngët. Mund ta hapësh kurdo me <span class="btn">Hap dosjen</span>.</li>
+</ol>
+
+<h2 class="page-break">Çfarë tregon tabela e këngëve</h2>
+<table class="legend">
+  <tr><th>Statusi</th><th>Çfarë do të thotë</th></tr>
+  <tr><td>○ Në pritje</td><td>Kënga është në radhë.</td></tr>
+  <tr><td>↓ Duke shkarkuar</td><td>Po shkarkohet. Shikon përqindjen, shpejtësinë dhe sa kohë mbetet.</td></tr>
+  <tr><td>♪ Duke konvertuar</td><td>Po kthehet në MP3. Zgjat pak sekonda.</td></tr>
+  <tr><td class="ok">✓ Përfundoi</td><td>Kënga është gati në dosje.</td></tr>
+  <tr><td class="mut">» Anashkaluar</td><td>E ke shkarkuar më parë, prandaj nuk shkarkohet sërish.</td></tr>
+  <tr><td class="bad">✕ Dështoi</td><td>Nuk u shkarkua. <b>Kliko dy herë</b> mbi të për të parë arsyen.</td></tr>
+  <tr><td class="mut">– Anuluar</td><td>E ndale me butonin <span class="btn">■ Ndalo</span>.</td></tr>
+</table>
+<p>Lart djathtas shikon numrat: <span class="ok">✓ të përfunduara</span>,
+<span class="mut">» të anashkaluara</span>, <span class="bad">✕ të dështuara</span>.</p>
+
+<h2>Pyetje të shpeshta</h2>
+
+<h3>Si e ndaloj shkarkimin?</h3>
+<p>Shtyp <span class="btn">■ Ndalo</span>. Këngët që kanë përfunduar mbeten në dosje.</p>
+
+<h3>Pse një këngë "Anashkalohet"?</h3>
+<p>Programi mban mend çdo këngë që ke shkarkuar, që të mos e shkarkojë dy herë. Nëse e do sërish,
+hiq shenjën te <i>Mos i shkarko sërish këngët e vjetra</i>, ose kliko <span class="btn">Pastro historikun</span>
+(kjo nuk fshin asnjë MP3).</p>
+
+<h3>Shumë këngë dështojnë njëkohësisht</h3>
+<table>
+  <tr><th>Mesazhi</th><th>Zgjidhja</th></tr>
+  <tr><td>Nuk ka internet / "Unable to download"</td><td>Kontrollo lidhjen me internetin dhe provo sërish.</td></tr>
+  <tr><td>"Video unavailable"</td><td>Video është fshirë, private ose e bllokuar në vendin tënd. Provo një tjetër.</td></tr>
+  <tr><td>"Sign in to confirm…", "HTTP Error 403", ose pothuajse gjithçka dështon</td>
+      <td>YouTube ka ndryshuar diçka dhe programi duhet përditësuar. Kërko një version të ri te personi që ta dërgoi.</td></tr>
+</table>
+
+<h3>Antivirusi e bllokon programin</h3>
+<p>Disa antivirusë dyshojnë për programe të vogla që nuk janë të nënshkruara. Mund ta shtosh
+<kbd>ShkarkuesMP3.exe</kbd> te përjashtimet (<i>exclusions</i>) e antivirusit.</p>
+
+<h3>Ku i gjej këngët?</h3>
+<p>Te dosja që shfaqet te <b>Ruaj te</b> (zakonisht <kbd>Downloads\Muzika</kbd>). Kliko <span class="btn">Hap dosjen</span>.
+Këngët mund t'i kalosh në telefon, USB ose makinë si çdo MP3 tjetër.</p>
+
+<div class="box"><b>Shënim</b>Shkarko vetëm muzikë që ke të drejtë ta shkarkosh, p.sh. për përdorim personal aty ku ligji e lejon.</div>
+
+<footer>Shkarkues MP3 v2.0 · Udhëzuesi i përdorimit</footer>
+</body>
+</html>
